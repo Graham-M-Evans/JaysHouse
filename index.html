@@ -262,6 +262,25 @@
 	<button id="fb10" style="width:50px;" onmousedown="JavaScript:doPush(10);" onmouseup="JavaScript:doRelease(10);">10</button>
 	</section>
 
+	.column {
+  	float: left;
+  	width: 25%;
+	}		
+
+	/* Clear floats after the columns */
+	.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+	}
+
+	<div class="row">
+  		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+	</div>
+
 	<!--
 	<section style="background-color:#C0C0C0;">
 	<h3>Receiving Strings</h3>	
