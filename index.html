@@ -62,21 +62,6 @@
         #main {
             transition: margin-left .5s;
         }
-
-        .chip {
-              display: inline-block;
-              padding: 5px;
-              height: 50px;
-              width: 100px;
-              font-size: 25px;
-              line-height: 50px;
-              border-radius: 25px;
-              background-color: #f1f1f1;
-            }
-
-        .chip button {
-            border: none;
-        }
         
         /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
         @media screen and (max-height: 450px) {
@@ -97,13 +82,14 @@
       <div id="main">
         <button class="openbtn" onclick="openNav()">☰ Daffurn Residence</button>
         <h1>Quick Actions</h1>
-      </div>
-
         <div id="quickActions">
             <div class="chip">
                 <button type="button"><i class="material-icons">lightbulb</i> Lights Off</button>
             </div>
-    </div>
+        </div>
+      </div>
+
+        
       
       <script>
       function openNav() {
