@@ -61,7 +61,7 @@ function getBoundString_EndLastIndex(msg, startChar, stopChar)
 
 function startWebsocket() 
 { 
-	var ip = document.getElementById("wsurladdress").value;
+	var ip = defaultIP // document.getElementById("wsurladdress").value;
 	
 	if (ip != null)
 	{
