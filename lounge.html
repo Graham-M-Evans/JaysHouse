@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daffurn Residence: Lounge</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="crestron.js"></script>
+    <script src="ui.js"></script>
+    
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="lounge.html">Lounge</a>
+        <a href="#">Kitchen</a>
+        <a href="#">Landing</a>
+    </div>
+      
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Lounge</button>
+        <div id="quickActions">
+            <div class="chip">
+                <button type="button" id="fb1" class="quickActionButton" onmousedown="JavaScript:doPush(1);" onmouseup="JavaScript:doRelease(1);"><i class="material-icons">lightbulb</i> Lights On</button>
+            </div>
+            <div class="chip">
+                <button type="button" id="fb2" class="quickActionButton" onmousedown="JavaScript:doPush(2);" onmouseup="JavaScript:doRelease(2);"><i class="material-icons">lightbulb_outline</i> Lights Off</button>
+            </div>
+            <div class="chip">
+                <button type="button" id="fb3" class="quickActionButton" onmousedown="JavaScript:doPush(3);" onmouseup="JavaScript:doRelease(3);"><i class="material-icons">roller_shades</i> Shades Open</button>
+            </div>
+            <div class="chip">
+                <button type="button" id="fb4" class="quickActionButton" onmousedown="JavaScript:doPush(4);" onmouseup="JavaScript:doRelease(4);"><i class="material-icons">roller_shades</i> Shades Close</button>
+            </div>
+        </div>
+    
+        <h4 id="text2" class="lightsTitle"></h4>
+        <div id="lights">
+            <div class="fader">
+                <p>Level</p>
+                <input id="sliderInput1" class="lightingFader" onchange="JavaScript:sendLevel(1);" type="range" value="0" min="0" max="255" />
+            </div>
+            <div class="fader">
+                <p>Hue</p>
+                <input id="sliderInput2" class="lightingFader" onchange="JavaScript:sendLevel(2);" type="range" value="0" min="0" max="255" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
