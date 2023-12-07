@@ -214,7 +214,7 @@ function sendString(sig)
 		doSend("STRING[" + sig + "," + inputText.value + "]");
 }
 
-window.addEventListener("load", init, false)
+//window.addEventListener("load", init, false)
 
 Window.onload = startWebsocket()
 
