@@ -56,25 +56,54 @@ body {
 }
 
 #quickActions {
+    Margin-top: 15px;
+    padding-left: 8px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10px;
 }
 
 .quickActionButton {
     border-radius: 25px;
     background-color: orangered;
     height: 50px;
-    width: 100%;
+    width: 200px;
     border: 2px solid black;
     color: white;
-    font-size:25px;
+    font-size:20px;
     padding: 10px 10px;
     margin-bottom: 10px;
 }
 
 .quickActionsTitle {
+    margin-top: 15px;
+    margin-bottom: 0px;
     text-align: center;
+}
+
+#lights {
+    Margin-top: 5px;
+    padding-left: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+
+.lightsTitle {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 12px;
+}
+
+.lightingFader {
+    width: 200px;
+}
+
+.fader p {
+    font-size: 15px;
+    margin: 5px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
