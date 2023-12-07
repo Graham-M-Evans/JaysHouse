@@ -1,5 +1,3 @@
-<script language="javascript" type="text/javascript">
-
 var defaultIP = "10.0.10.200";
 //var defaultIP = location.host;
 var connection = null;  
