@@ -47,6 +47,7 @@
         }
         
         .openbtn {
+            width: 100%
             font-size: 20px;
             cursor: pointer;
             background-color: #111;
@@ -80,6 +81,10 @@
             padding: 10px 10px;
             margin-bottom: 10px;
         }
+
+        .quickActionsTitle {
+            text-align: center;
+        }
         
         /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
         @media screen and (max-height: 450px) {
@@ -99,7 +104,7 @@
       
       <div id="main">
         <button class="openbtn" onclick="openNav()">☰ Daffurn Residence</button>
-        <h1>Quick Actions</h1>
+        <h1 class="quickActionsTitle">Quick Actions</h1>
         <div id="quickActions">
             <div class="chip">
                 <button type="button" class="quickActionButton"><i class="material-icons">lightbulb</i> Lights On</button>
