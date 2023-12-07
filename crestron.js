@@ -169,7 +169,7 @@ function onMessage(evt)
 			var other = document.getElementById("text" + text);
 			
 			if (other != null)
-				other.innerHTML = "Text" + text + ": " + value;
+				other.innerHTML = value; // Original Version -- "Text" + text + ": " + value;
 		}
 	}
 }  
@@ -217,3 +217,9 @@ function sendString(sig)
 //window.addEventListener("load", init, false)
 
 Window.onload = startWebsocket()
+
+
+
+
+
+
