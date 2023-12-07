@@ -2,13 +2,13 @@ var defaultIP = "10.0.10.200";
 //var defaultIP = location.host;
 var connection = null;  
 
-function init() 
-{ 
-	var inputBox = document.getElementById("wsurladdress");
-	
-	if (inputBox != null)
-		inputBox.value = defaultIP;
-}  
+//function init() 
+//{ 
+//	var inputBox = document.getElementById("wsurladdress");
+//	
+//	if (inputBox != null)
+//		inputBox.value = defaultIP;
+//}  
 
 function getBoundString(msg, startChar, stopChar)
 {
