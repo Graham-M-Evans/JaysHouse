@@ -93,18 +93,20 @@ function startWebsocket()
 
 function onOpen(evt) 
 { 
-	connection = document.getElementById("connection");
+	//connection = document.getElementById("connection");
 	
-	if (connection != null)
-		connection.innerHTML = "WebSocket: Connected";
+	//if (connection != null)
+	//	connection.innerHTML = "WebSocket: Connected";
+	console.log("WebSocket: Connected");
 }  
 
 function onClose(evt) 
 { 
-	connection = document.getElementById("connection");
+	//connection = document.getElementById("connection");
 	
-	if (connection != null)
-		connection.innerHTML = "WebSocket: Disconnected";
+	//if (connection != null)
+	//	connection.innerHTML = "WebSocket: Disconnected";
+	console.log("WebSocket: Disconnected");
 }  
 
 function onMessage(evt) 
