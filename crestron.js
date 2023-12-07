@@ -217,9 +217,3 @@ function sendString(sig)
 //window.addEventListener("load", init, false)
 
 Window.onload = startWebsocket()
-
-
-
-
-
-
